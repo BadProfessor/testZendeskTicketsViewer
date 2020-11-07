@@ -10,6 +10,9 @@ git push -u origin main
 npx create-react-app tickets-viewer
 cd .\tickets-viewer
 
+yarn start
+npm start
+
 CREDENTIALS:
 username: jjarmek@zendesk.com
 Token: vW3ves5YKERHhBte5KiqBUvyGW677STTLe60Fury
