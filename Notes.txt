@@ -1,4 +1,5 @@
-Command line
+COMMAND LINE
+
 echo "# tickets-viewer" >> README.md
 git init
 git add README.md
@@ -10,8 +11,8 @@ git push -u origin main
 npx create-react-app tickets-viewer
 cd .\tickets-viewer
 
-yarn start
 npm start
+npm add axios
 
 CREDENTIALS:
 username: jjarmek@zendesk.com
@@ -23,10 +24,12 @@ https://developer.zendesk.com/rest_api/docs/support/tickets
 https://support.zendesk.com/hc/en-us/articles/115000510267-How-can-I-authenticate-API-requests-
 
 END-Points:
-/api/v2/tickets.json
+https://z3nadvocate99.zendesk.com/api/v2/tickets.json
+
+Path:
+node_modules\eslint-webpack-plugin\dist\options.json
 
 POSTMAN:
 Save the postman config file
-
 
 Tutorial: 4:30
