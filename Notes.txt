@@ -32,4 +32,4 @@ node_modules\eslint-webpack-plugin\dist\options.json
 POSTMAN:
 Save the postman config file
 
-Tutorial: 4:30
+Tutorial: 20:30
