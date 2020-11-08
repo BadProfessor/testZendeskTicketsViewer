@@ -10,6 +10,7 @@ git push -u origin main
 
 npx create-react-app tickets-viewer
 cd .\tickets-viewer
+npm i dotenv
 
 npm start
 npm add axios
@@ -31,5 +32,3 @@ node_modules\eslint-webpack-plugin\dist\options.json
 
 POSTMAN:
 Save the postman config file
-
-Tutorial: 20:30
