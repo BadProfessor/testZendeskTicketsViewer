@@ -10,7 +10,7 @@ git push -u origin main
 
 npx create-react-app tickets-viewer
 cd .\tickets-viewer
-npm i dotenv
+npm i axios
 
 npm start
 npm add axios
