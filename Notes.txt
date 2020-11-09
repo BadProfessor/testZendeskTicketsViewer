@@ -9,18 +9,12 @@ git remote add origin git@github.com:BadProfessor/tickets-viewer.git
 git push -u origin main
 
 npx create-react-app tickets-viewer
-npx create-react-app .
 cd .\tickets-viewer
 npm i
 npm audit fix
 npm i axios
-npm add axios
 
 npm start
-
-CREDENTIALS:
-username: jjarmek@zendesk.com
-Token: vW3ves5YKERHhBte5KiqBUvyGW677STTLe60Fury
 
 API DOCS:
 https://developer.zendesk.com/rest_api/docs/support/tickets
@@ -32,6 +26,3 @@ https://z3nadvocate99.zendesk.com/api/v2/tickets.json
 
 Path:
 node_modules\eslint-webpack-plugin\dist\options.json
-
-POSTMAN:
-Save the postman config file
