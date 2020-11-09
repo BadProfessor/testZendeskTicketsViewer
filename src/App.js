@@ -4,6 +4,16 @@ import Pagination from './components/Pagination';
 import axios from 'axios';
 import './App.css';
 
+const sub = process.env.REACT_APP_HOST;
+const user = process.env.REACT_APP_USER;
+const pass = process.env.REACT_APP_PASS;
+
+const baseUrl = `https://${sub}.zendesk.com/api/v2/tickets.json`;
+const basicAuth = {
+  username: user,
+  password: pass,
+};
+
 const App = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -13,8 +23,12 @@ const App = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
-      setPosts(res.data);
+      const res = await axios({
+        method: 'get',
+        url: baseUrl,
+        auth: basicAuth,
+      });
+      setPosts(res.data.tickets);
       setLoading(false);
     };
 

@@ -9,7 +9,10 @@ export const Posts = ({ posts, loading }) => {
     <ul className="list-group mb-4">
       {posts.map((post) => (
         <li key={post.id} className="list-group-item">
-          {post.title}
+          Status: {post.status} <br />
+          Id: {post.id} <br />
+          Subject: {post.subject} <br />
+          Description: {post.description}
         </li>
       ))}
     </ul>
