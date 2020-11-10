@@ -67,12 +67,14 @@ const App = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios({
-        method: 'get',
-        url: baseUrl,
-        auth: basicAuth,
-      });
-      setPosts(res.data.tickets);
+      let res = await getTickets(baseUrl);
+      let tickets = res.data.tickets;
+      while (res.data.next_page) {
+        res = await getTickets(res.data.next_page);
+        tickets = tickets.concat(res.data.tickets);
+      }
+      tickets = tickets.reverse();
+      setPosts(tickets);
       setLoading(false);
     };
 
