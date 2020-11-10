@@ -14,8 +14,6 @@ const basicAuth = {
   password: pass,
 };
 
-/////////////////////////////////////////////////// Change
-
 const getTickets = (url) => {
   return axios({
     method: 'get',
@@ -23,40 +21,6 @@ const getTickets = (url) => {
     auth: basicAuth,
   }).then((res) => res);
 };
-
-const logErr = (err) => {
-  if (err.res) {
-    console.log(err.res.data);
-    console.log(err.res.status);
-    console.log(err.res.headers);
-  } else if (err.req) {
-    console.log(err.req);
-  }
-  console.log('Error: ', err.message);
-  console.log(err.config);
-  console.log(err.stack);
-};
-
-const sendTickets = async (req, res) => {
-  try {
-    let res = await getTickets(baseUrl);
-    let tickets = res.data.tickets;
-    while (res.data.next_page) {
-      res = await getTickets(res.data.next_page);
-      tickets = tickets.concat(res.data.tickets);
-    }
-    tickets = tickets.reverse(); // Recent First
-    res.status(200).send(tickets);
-    console.log(
-      `Sent ${tickets.length} tickets to ${req.hostname} at ${Date()}.`
-    );
-  } catch (error) {
-    logErr(error);
-    res.status(error.res ? error.res.status : 500).send(`${error.message}`);
-  }
-};
-
-/////////////////////////////////////////////////// Change
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -73,7 +37,6 @@ const App = () => {
         res = await getTickets(res.data.next_page);
         tickets = tickets.concat(res.data.tickets);
       }
-      tickets = tickets.reverse();
       setPosts(tickets);
       setLoading(false);
     };
