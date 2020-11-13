@@ -59,3 +59,146 @@ UI is easy to use and displays ticket results clearly.                          
 
 Consistency.                                                                    -
 Adherence to common standards.                                                  -
+
+
+
+INTERVIEW
+
+Categories:
+Algorithms
+Data structures
+Build a game (5 days)
+Take Home assignment
+System Design
+Architecture design
+Coding
+Whiteboard
+
+=========
+
+Leetcode
+Coderpad
+Bug fixes
+Internet fundamentals
+Code pairing
+book Cracking the Coding Interview!!!
+Exploratory testing
+
+Questions:
+Encoded string (a~z), find encode method
+
+Design a subway
+
+Print elements from a 2D array in spiral form
+
+Tic-Tac-Toe
+===========
+Implement a durable and persistent database with special commands
+
+T9 Problem
+
+DB design of Twitter app. Feed implementation.
+
+Connect 4 game
+
+Async/Await
+
+Component rendering
+
+fetching data
+
+Simple string problem
+
+Recursive function
+
+Find the second largest number in a sorted array
+
+Reverse string
+
+Design an elevator system in any Language
+
+Design Zendesk (system design)
+
+=====================================
+
+General OSI Model, TCP/IP, DNS, DHCP
+
+CLI search on JSON data
+
+Write a simple cipher that will take a string and replace each letter in the range a-z with the corresponding character 13 steps along the alphabet.
+
+Architecture of a real time analytics sort of system
+
+Mini testing framework in Ruby
+
+SQL views
+
+SQL Tables
+
+SQL index
+
+SQL joins
+
+HashMap
+
+HashSet
+
+Hash tables
+
+Find intersection of two arrays
+
+Design and code for an application cache
+
+Design a bike rent service
+
+Design an event driven system
+
+High scalability systems with Node.js
+
+Describe a software project that you architected and walk me through it so I understand it from a high level.
+
+How does attribute precedence work in Chef?
+
+search and replace words in a sentence
+
+What is the difference between process and thread?
+
+What is the difference between container and VM?
+
+Explain event bubbling.
+
+Write a method that returns 0 on 1, 1 on 0.
+
+What do I use for debugging my ruby?
+
+What are page objects
+
+Do I store my scripts in Git on my local machine
+
+If I am using Rubymine to create and run my automated suite on ubuntu, why do I need a separate selenium webdriver smoke test framework on my local machine
+
+Test tools that you are using
+
+how to turn a phrase like "zendesk" into "z.e.n.d.e.s.k" using JS
+
+Build a custom app using a third party API to leverage specific situations and circumstances that are listed as requirements and integrate it into zendesk.
+
+Build a carousel of photos
+
+Find the second largest number in a sorted array.
+
+Implement a redis server (Googling is allowed, time limit is 2 hours)
+
+Write a string compression method and use TDD    
+
+Code some quick system monitors using the language of your choice
+
+===============================================
+1. Next week virtual briefing on next steps
+
+2. You will be given an online coding assessment to complete
+
+3. If you pass this - you will have two final virtual interviews - coding & a management interview
+
+
+Virtual briefing: key notes from leadership, managers, previous interns and then talks from me on process + Q&A.
