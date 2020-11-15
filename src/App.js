@@ -46,12 +46,12 @@ const App = () => {
 
   console.log(posts);
 
-  // Get current posts
+  // Get posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
-  // Change page
+  // Change the page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
