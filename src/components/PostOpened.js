@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Ticket = () => {
+const PostOpened = () => {
   return <div></div>;
 };
 
-export default Ticket;
+export default PostOpened;
