@@ -6,8 +6,8 @@ It was created using React.
 ## Instalation instructions
 
 Download or clone the github repository.
-In the .env file make sure you have the valid subdomain, user and pass credentials.
-In the root repository, run:
+In the .env file make sure you have the valid subdomain, user and pass credentials.\
+In the root folder, run:
 
 ### `npm start`
 
