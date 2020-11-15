@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Posts from './components/Posts';
 import Pagination from './components/Pagination';
+import errorHandler from './utils/errorHandler'; // it is empty ATM
 import axios from 'axios';
 import './App.css';
 
@@ -30,8 +31,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      setLoading(true);
       let res = await getTickets(baseUrl);
+      setLoading(true);
+      console.log('Reached try');
       let tickets = res.data.tickets;
       while (res.data.next_page) {
         res = await getTickets(res.data.next_page);
