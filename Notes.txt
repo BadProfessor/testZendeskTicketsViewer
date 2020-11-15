@@ -44,7 +44,8 @@ Simplicity.                                                                     
 UI is easy to use and displays ticket results clearly.                          +
 Consistency.                                                                    +
 Adherence to common standards.                                                  +
-Ticket list view and the single ticket view                                     0
+
+Ticket list view and the single ticket view                                     -
 
 The Ticket Viewer should handle the API being unavailable                       -
 Friendly error message if the API is unavailable or the response is invalid.    -
